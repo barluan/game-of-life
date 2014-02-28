@@ -21,6 +21,8 @@ public class GameController {
     public ModelAndView newGame() {
         ModelAndView mav = new ModelAndView("game/edit");
         Universe universe = new Universe();
+        
+    
         //Universe universe = new Universe();
         mav.addObject("universe", universe);
         thinkABit(250);
